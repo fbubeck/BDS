@@ -16,6 +16,8 @@ public class Candidate {
     @Indexed(unique = true)
     private String email;
 
+    //getter and setter
+
     public String getId() {
         return id;
     }
