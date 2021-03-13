@@ -1,5 +1,6 @@
-package de.dhbw.bds.RESTWebservice.model;
+package de.dhbw.bds.RESTWebservice.controller;
 
+import de.dhbw.bds.RESTWebservice.model.Candidate;
 import de.dhbw.bds.RESTWebservice.repositories.CandidateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
