@@ -4,8 +4,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "candidate")
-public class Candidate {
+@Document(collection = "restaurant")
+public class Restaurant {
     @Id
     private String id;
 
