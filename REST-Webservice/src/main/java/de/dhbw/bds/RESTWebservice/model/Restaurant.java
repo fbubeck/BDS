@@ -11,7 +11,11 @@ public class Restaurant {
 
     private String name;
 
-    private double exp;
+    private String adresse;
+
+    private String inhaber;
+
+    private String foodstyle;
 
     @Indexed(unique = true)
     private String email;
@@ -34,12 +38,28 @@ public class Restaurant {
         this.name = name;
     }
 
-    public double getExp() {
-        return exp;
+    public String getAdresse() {
+        return adresse;
     }
 
-    public void setExp(double exp) {
-        this.exp = exp;
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public String getInhaber() {
+        return inhaber;
+    }
+
+    public void setInhaber(String inhaber) {
+        this.inhaber = inhaber;
+    }
+
+    public String getFoodstyle() {
+        return foodstyle;
+    }
+
+    public void setFoodstyle(String foodstyle) {
+        this.foodstyle = foodstyle;
     }
 
     public String getEmail() {
