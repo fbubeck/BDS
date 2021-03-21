@@ -8,25 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Document(collection = "restaurant")
-public class Restaurant<Tisch> {
+public class Restaurant<Tisch, Kunde> {
     @Id
     private String id;
-
     private String name;
-
     private String adresse;
-
     private String inhaber;
-
     private String foodstyle;
-
     private String email;
-
     private List<Tisch> tische = new ArrayList<Tisch>();
 
     //getter and setter
-
-
     public List<Tisch> getTische() {
         return tische;
     }
