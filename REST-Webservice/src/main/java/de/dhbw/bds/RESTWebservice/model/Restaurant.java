@@ -4,8 +4,11 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Document(collection = "restaurant")
-public class Restaurant {
+public class Restaurant<Tisch> {
     @Id
     private String id;
 
@@ -17,10 +20,20 @@ public class Restaurant {
 
     private String foodstyle;
 
-    @Indexed(unique = true)
     private String email;
 
+    private List<Tisch> tische = new ArrayList<Tisch>();
+
     //getter and setter
+
+
+    public List<Tisch> getTische() {
+        return tische;
+    }
+
+    public void setTische(List<Tisch> tische) {
+        this.tische = tische;
+    }
 
     public String getId() {
         return id;
